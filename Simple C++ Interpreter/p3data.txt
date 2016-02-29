@@ -1,0 +1,10 @@
+program
+int a, b, c;
+double d;
+begin
+b = 3*(5+2);
+c = (3+4)*5;
+print b;
+print c;
+print (2+3)*7+2^3;
+end
