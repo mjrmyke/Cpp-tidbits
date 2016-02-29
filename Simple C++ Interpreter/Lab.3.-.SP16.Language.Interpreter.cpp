@@ -1,5 +1,5 @@
 /*
-Grammar Parser for FresnoSP16 Language (simple c++)
+Interpreter for FresnoSP16 Language (simple c++)
 Lab 3
 input: FresnoSP16 language program, p3data.txt
 output: evaluation p3data.txt's
@@ -58,9 +58,9 @@ int main(){
     }
   }
 
-/*--------------
---Lab 2 Business
----------------*/
+/*---------------------------------------------------------
+Lab 2 Functions----------------------------------------------
+-----------------------------------------------------------*/
 
 
 //Expression Function
