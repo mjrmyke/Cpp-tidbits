@@ -1,0 +1,11 @@
+Console output:
+
+Entering Main Function
+--Program Found!, Interpreting File -- 
+New Variable Initalized! of Type: int && named: a at index: 1
+New Variable Initalized! of Type: int && named: b at index: 2
+New Variable Initalized! of Type: int && named: c at index: 3
+New Variable Initalized! of Type: double && named: d at index: 4
+21
+35
+43
