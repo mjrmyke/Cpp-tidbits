@@ -1,4 +1,4 @@
-/* Myke Walker 
+/* Myke Walker
 File: lists.cpp
 */
 
@@ -17,7 +17,7 @@ private: // static to make available to all links in list
     static int	Linkcount;
     static int	freelinkcnt;
 public:
-
+    mark bool;
     E data;
     Link<E>* prev;
     Link<E>* next;
@@ -120,6 +120,7 @@ public:
     void clear();
     void prepend(const E& item);
     void append(const E& item);
+    void insert(const E& item);
     bool moveToStart();
     bool moveToEnd();
     bool next();
@@ -193,6 +194,19 @@ void DLList<E>::append(const E& item){
     tail->next = newLink;
     tail = newLink;
 }
+
+template<class E>//added prev handling from book function
+void DLList<E>::insert(const E& item){
+    Link<E>* newLink = new Link<E>(item);
+    if (head == 0){
+        head = newLink;
+        tail = newLink;
+        currNode = newLink;
+        return;
+    }
+//selection sort goes here 
+}
+
 
 template<class E>//same as book
 bool DLList<E>::moveToEnd(){
