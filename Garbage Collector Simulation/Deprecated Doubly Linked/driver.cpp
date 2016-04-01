@@ -23,7 +23,9 @@ int main()
 {
     using namespace std;
 
-    DLList<char> DoubleLink;
+    DLList<char> DoubleLink[10];
+
+
 
     while (not done)
         {

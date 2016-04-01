@@ -198,13 +198,19 @@ void DLList<E>::append(const E& item){
 template<class E>//added prev handling from book function
 void DLList<E>::insert(const E& item){
     Link<E>* newLink = new Link<E>(item);
-    if (head == 0){
+    if (head == 0 || head->data >= item){
         head = newLink;
-        tail = newLink;
+        // tail = newLink;
         currNode = newLink;
         return;
     }
-//selection sort goes here 
+    else{
+      currNode = head;
+      while (current->next != NULL && current->next->data < item) {currNode = currNode->next;}
+      newlink->next = current->next;
+      current->next = newlink;
+    }
+//insertion sort goes here
 }
 
 
